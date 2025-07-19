@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>amoura.luxe ✨</title><link rel="stylesheet" href="/static/style.css"></head><body>
+<header>amoura.luxe ✨ | <a href="/login">Login</a> | <a href="/register">Register</a> | <a href="/admin">Admin</a> | <a href="/logout">Logout</a></header>
+<h2>Our Products</h2>
+{% for p in products %}
+<div class="product">
+<img src="{{ p[5] }}" alt="{{ p[1] }}">
+<h3>{{ p[1] }}</h3>
+<p>PKR {{ p[2] }}</p>
+<p>Category: {{ p[3] }} | Age: {{ p[4] }}</p>
+</div>
+{% endfor %}
+</body></html>
